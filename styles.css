@@ -2,63 +2,47 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
 }
 
 .container {
-    max-width: 800px;
-    margin: 20px auto;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
     padding: 20px;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 header {
     text-align: center;
-    border-bottom: 2px solid #333;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+    padding: 20px 0;
+    background-color: #6c63ff;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
 .profile-pic {
     border-radius: 50%;
-    height: 130px;
-}
-
-h1 {
-    margin: 0;
+    border: 5px solid #fff;
+    margin-top: 10px;
 }
 
 h2 {
-    color: #555;
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
+    border-left: 5px solid #6c63ff;
+    padding-left: 10px;
+    color: #6c63ff;
 }
 
-section {
-    margin-bottom: 20px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 5px 0;
-}
-
-.job {
-    margin-bottom: 20px;
-}
-
-.date {
-    font-size: 0.9em;
-    color: #777;
+.summary p, .education ul, .experience .job ul, .skills ul, .other ul {
+    margin-left: 20px;
+    line-height: 1.6;
 }
 
 hr {
@@ -68,11 +52,53 @@ hr {
     margin: 20px 0;
 }
 
-a {
-    color: #3498db;
-    text-decoration: none;
+section {
+    margin-bottom: 20px;
 }
 
-a:hover {
-    text-decoration: underline;
+.education ul, .skills ul, .other ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.education li, .skills li, .other li {
+    background: #e8e8fe;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.experience .job {
+    background: #e8e8fe;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.experience .job h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.experience .job p.date {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.experience .job ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #6c63ff;
+    color: #fff;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
 }
